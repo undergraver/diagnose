@@ -141,7 +141,7 @@ Coverage is very important if you want to make sure your code executes all branc
 
 In some safety critical environments code needs to have a very high coverage - usually more than 90%, the rest requiring clear reasons on why it cannot be covered (critical paths that are hard to reach in normal execution for example).
 
-Such example is the next code that normally doesn’t fail in `stat` function call if the file was successfully opened.
+Such example is the next code that normally doesn’t fail in `fstat` function call if the file was successfully opened.
 ```
 #include <stdio.h>
 #include <fcntl.h>
