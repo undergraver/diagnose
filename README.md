@@ -100,6 +100,7 @@ Other libraries come with their own logging systems (Poco, ACE/TAO for example) 
 
 Most logs have additional information like:
 
+* date and time (or at least some sort of timestamp)
 * source file position (filename and line number)
 * thread information (thread id)
 * process information (for multi-process logs)
