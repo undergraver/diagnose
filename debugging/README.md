@@ -144,3 +144,14 @@ So you can pretty much do a lot of things with a debugger. This information is g
 Key takeaways:
 * debug information provides better debugging experience
 * not optimizing code is easier to debug (you can test for yourself with -O options - see gcc help for more details)
+
+
+Further work:
+* attach to a running program.
+  * Make a simple program that sleeps for some seconds (enough to run the gdb command to attach commands) - see https://man7.org/linux/man-pages/man3/sleep.3.html
+  * run the program
+* in a different terminal attach to it by PID. Program's pid can be found with `ps aux | grep my_program`
+* attaching the debugger can be done via `gdb ./my_program -p <PID>`
+* Remote debugging:
+  * install gdbserver on a machine
+  * follow the instructions on how to use it: https://gcc.gnu.org/onlinedocs/gcc-4.8.5/gnat_ugn_unw/Remote-Debugging-using-gdbserver.html
