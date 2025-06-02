@@ -4,6 +4,21 @@ NOTE: this will mostly focus on linux tools. Other operating systems have simila
 
 Please check this repository for example and details on how to use the tools.
 
+# Preparation of environment
+
+This was tested on an opensuse tumbleweed, but other distros can be also used. Once installed these packages are required to be installed. For other distros you can find the equivalent package names.
+
+`zypper install clang-tools clang gcc gcc-c++ valgrind cppcheck git python3 gperf gcovr lcov`
+
+You can even install opensuse tumbleweed under WSL. Here are the instructions on how to install. Don't forget to download the packages.
+
+* Enable WSL (if not already done) - Go to: Control Panel/Programs/Turn Windows features on or off and select “Windows Subsystem for Linux”, and press OK
+* Install tumbleweed
+  * wsl --list --online
+  * wsl --install -d openSUSE-Tumbleweed (or something from the previous list)
+  * configure the system
+
+
 # Debugging
 
 Debugging is the first thing to do when you’re in trouble. it is usually easily accessible. It doesn’t matter if we’re talking about Java/C/C++ they usually do the same thing:
