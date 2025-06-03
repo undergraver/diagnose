@@ -40,13 +40,13 @@ int main(int argc, char *argv[]) {
     }
 
     for (int i = 0; i < vectorSize; i++) {
-        vector[i] = rand() % 10000;
+        vector[i] = rand();
     }
 
     qsort(vector,vectorSize,sizeof(int),compare_ints);
 
     for (int i = 0; i < searchCount; i++) {
-        numbersToSearch[i] = rand() % 10000;
+        numbersToSearch[i] = rand();
     }
 
     for (int i = 0; i < searchCount; i++) {
