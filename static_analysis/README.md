@@ -92,6 +92,13 @@ In conclusion it is good practice to have the static analysis enabled on your co
 
 Important note: NOT EVERYTHING IS CORRECT, please analyze each report and decide if the reports are valid or not.
 
+# Symbols (low level work)
+
+Sometimes the executables obtained might not be as expected and some functions might not have the desired name in the binary (especially when we're talking about DLLs/Shared objects). In such cases we can use tools like `nm`, `objdump`, 'strings` to help us figure out if some binary symbols are what they are supposed to be.
+
+Please read more about this tools.
+Related topic: https://en.wikipedia.org/wiki/Name_mangling
+
 # Further work
 * Integrate coverity from github
 * Add other static analysis tools in the examples
