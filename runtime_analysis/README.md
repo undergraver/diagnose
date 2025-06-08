@@ -264,5 +264,14 @@ iulians@tumbleweed:~/diagnose/runtime_analysis> cat -n stack_smasher.cpp | head 
 iulians@tumbleweed:~/diagnose/runtime_analysis>
 ```
 
-In conclusion:
+# Desperation mode
+When your out of ideas it is always good to use some tools that give raw access to what the program opens/calls at a certain moment in time. For this we can use on Windows tools like Process Explorer or Process Monitor.
+
+On Linux we have the following commands:
+* strace - traces system calls and their parameters
+* ltrace - traces library calls and their parameter
+* lsof - displays the open files for a certain process ( `lsof -p <PID>` ) or tell you which program has a certain files open ( `lsof <filename>` )
+
+
+# Conclusion:
 * be familiar with all these tools as they can complement each other
